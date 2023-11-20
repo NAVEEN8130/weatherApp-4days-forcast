@@ -1,0 +1,49 @@
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      background-color: rgb(207, 223, 223);
+     
+
+}
+.main_section{
+ max-width: 1080px;
+      width: auto;
+      margin: auto;
+}
+
+.container{
+      border-bottom: 2px solid grey;
+      padding-bottom:10px ;
+      margin-top:50px ;
+      justify-content: space-between;
+      display: flex;
+}
+.placename{
+      font-size: 18px;
+      font-weight: 700;
+      color: rgb(47, 47, 103);
+}
+input{
+      padding: 12px 50px;
+      border: none;
+}
+.icon{
+      padding: 12px 20px;
+      border: none;
+      background-color: white;
+
+
+}
+
+@media screen and (max-width : 768px) {
+      .container{
+            flex-wrap: wrap-reverse;
+            gap: 20px;
+            width: 100%;
+            overflow-x: scroll;
+      }
+}

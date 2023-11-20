@@ -1,0 +1,87 @@
+body{
+      font-family: sans-serif;
+
+      /* background-color: black; */
+      /* margin-top: 400px; */
+}
+.main-container{
+      margin-top: 50px;
+      display: flex;
+      gap: 30px;
+}
+.main-desc{
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      text-decoration: none;
+      color: black;  
+}
+a{
+      text-decoration: none;
+      /* font-size: 23px; */
+      font-weight: 500;
+      color: black;
+}
+.main-btn{
+      padding: 8px 10px;
+      margin-bottom: 8px;
+}
+.calender{
+      margin-right: 3px;
+}
+.card-details{
+      /* width: 100%; */
+      font-size: 13px;
+      color: white;
+      border-radius: 5px;
+      padding: 21px 10px;
+      border-radius: 7px;
+background: linear-gradient(180deg, #464646 0%, #1D2540 100%);
+box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.maindetails{
+      border-bottom:2px solid grey ;
+      padding-bottom:10px ;
+}
+.main-details{
+      flex: 1;
+
+}
+
+.main_cnt{
+      border-bottom: 2px solid grey;
+      padding-bottom: 10px;
+      display: flex;
+}
+
+.desc{
+      text-transform: capitalize;
+      font-size: 18px;
+}
+.card{
+flex: 1;
+}
+.cardsContainer{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+}
+.cityDetails{
+      padding-top:11px ;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+}
+
+.main-date-sections{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+}
+.main-desc{
+      margin-bottom: 10px;
+
+}
