@@ -1,15 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./head.css"
 
 const Header = () => {
 
 
-
-
-      let [city, setCity] = useState("");
+      let [city, setCity] = useState("bangalore");
       let [dmsCord, setDmsCord] = useState("")
       let [list, setlist] = useState("")
       let [days, setDays] = useState([])
+
+
+      useEffect(() => {
+            getWeatherData(city)
+      }, [])
+
+
+
       const citySetter = (e) => {
             setCity(e.target.value);
       }
