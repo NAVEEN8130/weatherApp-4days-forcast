@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./head.css"
+import "./Main.css"
 
 const Header = () => {
 
@@ -12,7 +13,7 @@ const Header = () => {
 
       useEffect(() => {
             getWeatherData(city)
-      })
+      }, [])
 
 
 
@@ -28,9 +29,9 @@ const Header = () => {
             return `${degrees}° ${minutes}' ${seconds}''`
       }
 
-      const getWeatherData = async (city) => {
+      async function getWeatherData(city) {
 
-            let url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=158c940851fb4465d10f9b8c94149ce1`
+            let url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=bd5e378503939ddaee76f12ad7a97608`
             let response = await fetch(url)
             let data = await response.json();
             console.log('data: ', data);
@@ -42,8 +43,8 @@ const Header = () => {
             setDmsCord(coordinatesDMS)
 
 
-            let url2 = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=158c940851fb4465d10f9b8c94149ce1`
-            console.log('url2: ', url2);
+            let url2 = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=bd5e378503939ddaee76f12ad7a97608`
+            // console.log('url2: ', url2);
             let response2 = await fetch(url2)
             console.log('response2: ', response2);
             let data2 = await response2.json();
